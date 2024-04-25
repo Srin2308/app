@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size:62.5%;
+}
+body{
+    width:100vw;
+    height:100vh;
+}
+header nav{
+    background-color:#E0F1DB;
+    display:flex;
+    height:9rem;
+}
+header nav .logo{
+    display: flex;
+    width: 122px;
+    height: 9rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo img{
+    width:75%;
+    height:75%;
+}
+header nav ul{
+    width:100%;
+    display:flex;
+    gap:1rem;
+    justify-content: space-between;
+     align-items: center; 
+}
+.list{
+    flex:1;
+    border:1px solid black;
+    border-radius: 5px;
+    height:4rem;
+    line-height: 4rem;
+    list-style-type: none;
+    text-align: center;
+    background-color: black;
+}
+ .list.a{
+    background-color: white;
+
+}
+.a a{
+    color:black;
+}
+.link{
+    text-decoration: none;
+    font-size: 3rem;
+    color:white;
+}
+footer{
+    width:100%;
+    height:20rem;
+}
+footer .box{
+    width:100%;
+    height:20rem;
+    background-color: black;
+} 
+/* default content over */
+
+main{
+    background-image: url(images/home.png);
+    padding:2rem 0; 
+}
+main .con{
+    height:400px;
+    width:90%;
+    margin:0 auto;
+    
+}
+.al{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 355px;
+    height: 5rem;
+    padding: 10px;
+    border-radius: 18px;
+    background: #EED0AC;
+}
+main .con .head{
+    font-size: 2.5rem;
+}

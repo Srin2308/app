@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size:62.5%;
+}
+body{
+    width:100vw;
+    height:100vh;
+}
+header nav{
+    background-color:#E0F1DB;
+    display:flex;
+    height:9rem;
+}
+header nav .logo{
+    display: flex;
+    width: 122px;
+    height: 9rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo img{
+    width:75%;
+    height:75%;
+}
+header nav ul{
+    width:100%;
+    display:flex;
+    gap:1rem;
+    justify-content: space-between;
+     align-items: center; 
+}
+.list{
+    flex:1;
+    border:1px solid black;
+    border-radius: 5px;
+    height:4rem;
+    line-height: 4rem;
+    list-style-type: none;
+    text-align: center;
+    background-color: black;
+}
+ .list.b{
+    background-color: white;
+
+}
+.b a{
+    color:black;
+}
+.link{
+    text-decoration: none;
+    font-size: 3rem;
+    color:white;
+}
+footer{
+    width:100%;
+    height:20rem;
+    bottom:0;
+}
+footer .box{
+    width:100%;
+    height:20rem;
+    background-color: black;
+} 
+/* default content over */
+main{
+    background-image: url(images/calculator.png);
+    padding:2rem 1rem;
+}
+main .top{
+    display: flex;
+    width: 356px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    border: 2px solid #181717;
+    background: #28C2E3;
+}
+main .middle{
+    height:40rem;
+    width:65%;
+    margin:0 auto;
+    border:1px solid black;
+    background-color:#fff;
+    margin-top:2rem;
+    margin-bottom: 2rem;
+}
+main .bottom{
+    display: flex;
+    width: 20%;
+    padding:1em;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: #A34ED7;
+    margin:0 auto;
+    
+}
+main .bottom .head a{
+    text-decoration: none;
+    color: #181717;
+}
+

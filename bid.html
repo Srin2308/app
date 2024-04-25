@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bidcss.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <ul>
+                <li class="list a"><a href="home.html" class="link">Home</a></li>
+                <li class="list b"><a href="calculator.html" class="link">Calculator</a></li>
+                <li class="list c"><a href="bid.html" class="link">Bidsphere</a></li>
+                <li class="list d"><a href="schemes.html" class="link">Schemes</a></li>
+                <li class="list e"><a href="engineers.html" class="link">Engineers</a></li>
+                <li class="list f"><a href="" class="link">MY profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <form action="">
+                <div class="price">
+                    <label for="" class="la">Estimated Price</label>
+                    <input type="text" class="in">
+                </div>
+                <div class="area">
+                    <label for="" class="la">Area of land(sqr mtr)</label>
+                    <input type="text" class="in">
+                </div>
+                <div class="pro">
+                    <label for="" class="la fileLabel">Property Document</label>
+                    <input type="file" class="fileInput" accept=".pdf" onchange="updatePlaceholder()" value="">
+                </div>
+                <div class="plan">
+                    <label for="" class="la fileLabel">Plan propasal(optional)</label>
+                    <!-- <input type="file"> -->
+                    <input type="file" class="fileInput" accept=".pdf" onchange="updatePlaceholder()" value="">
+                </div>
+                <div class="instr">
+                    <label for="" class="la">Instructions(Optional)</label>
+                    <textarea name="" id="" cols="4" rows="8"></textarea>
+
+                </div>
+                <div class="but">
+                    <button>Start Bidding</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="box">
+
+        </div>
+    </footer>
+    <script>
+        function updatePlaceholder() {
+            const fileInput = document.querySelector('.fileInput');
+            const fileLabel = document.querySelector('.fileLabel');
+            if (fileInput.files.length > 0) {
+                fileLabel.textContent = fileInput.files[0].name;
+            } else {
+                fileLabel.textContent = '';
+            }
+        }
+    </script>
+</body>
+
+</html>
