@@ -182,3 +182,47 @@ input,select{
     border-radius: 5px;
     width: 200px;
 }
+/* section-2 */
+.section-2{
+    height: 100vh;
+    width: 100vw;
+    background-color: aliceblue;
+    display:none;
+}
+.material-info{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.mat-cont{
+    width:60%;
+    margin-top: 110px;
+    
+}
+.c-re{
+    font-size: 4rem;
+}
+.grid-container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:repeat(4,40px);
+    grid-gap: 10px; /* Gap between grid items */
+  }
+
+.grid-item {
+    background-color:bisque;
+    /* padding: 14px; */
+    text-align: center;
+    font-size:25px;
+    font-weight: 500;
+  }
+  .h-grid-item{
+    background-color:#6cbbfa;
+    /* padding: 14px; */
+    text-align: center;
+    font-size:25px;
+    font-weight: 500;
+  }

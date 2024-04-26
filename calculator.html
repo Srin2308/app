@@ -33,37 +33,55 @@
                 </div>
                 <div class="con-box">
                     <div class="ele">
-                    <div class="container">
-                        <div class="input-group">
-                            <label for="houseType">House Type*</label>
-                            <select id="houseType" name="houseType">
-                                <option value="basic" selected>basic</option>
-                                <option value="premium" selected>Premium</option>
-                            </select>
+                        <div class="container">
+                            <div class="input-group">
+                                <label for="houseType">House Type*</label>
+                                <select id="houseType" name="houseType">
+                                    <option value="basic" selected>basic</option>
+                                    <option value="premium" selected>Premium</option>
+                                </select>
+                            </div>
+
+                            <div class="input-group">
+                                <label for="area">Area*</label>
+                                <input type="number" id="area" name="area" placeholder="Sq.Feet">
+                            </div>
+
+                            <div class="input-group">
+                                <label for="pincode">Pincode*</label>
+                                <input type="text" id="pincode" name="pincode" placeholder="Pincode">
+                            </div>
                         </div>
-                    
-                        <div class="input-group">
-                            <label for="area">Area*</label>
-                            <input type="number" id="area" name="area" placeholder="Sq.Feet">
-                        </div>
-                    
-                        <div class="input-group">
-                            <label for="pincode">Pincode*</label>
-                            <input type="text" id="pincode" name="pincode" placeholder="Pincode">
-                        </div>
+                        <button class='su' type="submit">Calculate Cost</button>
                     </div>
-                    <button  class='su' type="submit">Calculate Cost</button>
-                </div>
                 </div>
             </div>
 
         </main>
+    </div>
+    <div class="section-2">
+        <div class="material-info">
+            <div class="mat-cont">
+                <h1 class="c-re">Approximate cost required</h1>
+                <div class="grid-container">
+                    <div class="h-grid-item">Material</div>
+                    <div class="h-grid-item">Cost</div>
+                    <div class="grid-item">Cement</div>
+                    <div class="grid-item">49000</div>
+                    <div class="grid-item">Sand</div>
+                    <div class="grid-item">36900</div>
+                    <div class="grid-item">Aggregate</div>
+                    <div class="grid-item">222000</div>
+                </div>
+            </div>
+        </div>
     </div>
     <footer>
         <div class="box">
 
         </div>
     </footer>
+    <script src="cal.js"></script>
     <script src="navbar.js"></script>
 </body>
 

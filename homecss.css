@@ -9,7 +9,7 @@ html {
 }
 
 .home-section {
-    height: 200vh;
+    height: 350vh;
 }
 
 header nav {
@@ -146,4 +146,116 @@ main{
     margin-top: 1em;
     font-size: 2rem;
     color:burlywood;
+}
+.materials{
+    height: 100vh;
+    width:100%;
+    padding:2em;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+.cont-m{
+    width:60%;
+}
+.h-head{
+        /*  larger font size, more shadow distance  */
+        font-size: 3.7rem;
+        font-weight: bold;
+        color:darkorange;
+}
+.date-cont{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-top: 80px;
+    align-items: center;
+}
+
+.dateItemBox{
+    display: flex;
+    background-color: var(--bg);
+    border: 1px solid rgb(233, 220, 220);
+    height:80px;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width:65%;
+    padding:0 0.3em 0 0.3em;
+    margin-bottom: 35px;
+    position: relative;
+}
+.d:nth-child(2n-1)>.d_circle{
+    background-color:#E8C1A2;
+}
+.d:nth-child(2n+1)>.d_circle{
+    background-color:#30536F;
+}
+.d:nth-child(2)>.d_image{
+    position: absolute;
+    right:-120px;
+    top:-15px;
+}
+.d_circle{
+    flex:1;
+    border-radius: 50%;
+    background-color:#E8C1A2;
+    align-self: center;
+    justify-self:center;
+    height: 90%;
+}
+.d_info{
+    text-align: center;
+    flex:6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* font-family: var(--text1); */
+    font-size:2rem;
+    font-weight:500;
+}
+.d_da{
+    margin:0;
+    font-size: 2.7rem;
+}
+.dc_info{
+    margin:0;
+}
+.dc_info>a{
+  text-decoration: none;
+}
+/* section-3 */
+.sec-3{
+    height: 150vh;
+    width: 100vw;
+    padding:2em;
+    background-color:antiquewhite;
+    display: flex;
+    justify-content: center;
+}
+.h2-head{
+    font-size: 3.7rem;
+    color: crimson;
+}
+.one-item{
+    display: flex;
+    flex-direction: column;
+}
+.mat-flex{
+    display: flex;
+
+}
+.mat-flex-item{
+    flex-basis: 100px;
+    margin-right: 20px;
+}
+.mat-flex-item>img{
+    width: 200px;
+    height: 200px;
+    object-fit:cover;
+}
+.items{
+    font-size: 2.7rem;
+    margin:20px 0;
+    color: navy;
 }
