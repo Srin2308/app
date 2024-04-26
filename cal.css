@@ -10,99 +10,175 @@ body{
     width:100vw;
     height:100vh;
 }
-header nav{
-    background-color:#E0F1DB;
-    display:flex;
-    height:9rem;
+.home-section{
+    height: 100vh;
 }
-header nav .logo{
+.header{
+    display: block;
+}
+header nav {
+    background-color: #E0F1DB;
     display: flex;
-    width: 122px;
-    height: 9rem;
-    justify-content: flex-start;
+    height: 6rem;
+}
+
+header nav .logo {
+    display: flex;
+    width: 110px;
+    height: 6rem;
+    /* justify-content: flex-start; */
     align-items: center;
+    margin-left: 2em;
 }
-.logo img{
-    width:75%;
-    height:75%;
+
+.logo img {
+    width: 100%;
+    height: 100%;
 }
-header nav ul{
-    width:100%;
-    display:flex;
-    gap:1rem;
+
+.navc {
+    display: flex;
     justify-content: space-between;
-     align-items: center; 
 }
-.list{
-    flex:1;
-    border:1px solid black;
-    border-radius: 5px;
-    height:4rem;
-    line-height: 4rem;
+
+header nav ul {
+    display: flex;
+    gap: 4rem;
+    justify-content: end;
+    align-items: center;
+    margin-right: 5em;
+
+}
+
+.list {
+    
     list-style-type: none;
     text-align: center;
-    background-color: black;
+    position: relative;
 }
- .list.b{
-    background-color: white;
 
-}
-.b a{
-    color:black;
-}
-.link{
+
+.link {
     text-decoration: none;
-    font-size: 3rem;
-    color:white;
-}
-footer{
-    width:100%;
-    height:20rem;
-    bottom:0;
-}
-footer .box{
-    width:100%;
-    height:20rem;
-    background-color: black;
-} 
-/* default content over */
-main{
-    background-image: url(images/calculator.png);
-    padding:2rem 1rem;
-}
-main .top{
-    display: flex;
-    width: 356px;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 20px;
-    border: 2px solid #181717;
-    background: #28C2E3;
-}
-main .middle{
-    height:40rem;
-    width:65%;
-    margin:0 auto;
-    border:1px solid black;
-    background-color:#fff;
-    margin-top:2rem;
-    margin-bottom: 2rem;
-}
-main .bottom{
-    display: flex;
-    width: 20%;
-    padding:1em;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    background: #A34ED7;
-    margin:0 auto;
+    font-size: 2.5rem;
+    color:forestgreen;
+    font-weight: bold;
     
 }
-main .bottom .head a{
-    text-decoration: none;
-    color: #181717;
+.link::after{
+   
+      content: '';
+      position: absolute;
+      width:0; 
+      height: 3px;
+      display: block;
+      background:forestgreen;
+      transition: width .2s ease;
+    
+}
+.link:hover:after{
+    width: 50%;
+    left: 0;
+    height: 3px;
 }
 
+footer {
+    width: 100%;
+    height: 20rem;
+}
+
+footer .box {
+    width: 100%;
+    height: 20rem;
+    background-color: black;
+}
+.active{
+    color:darkorange;
+    font-weight: bold;
+    
+}
+/* default content over */
+main{
+    width:100%;
+    height:calc(100vh-6rem);
+}
+.cal-section{
+    width: 100%;
+    height:100%;
+    position: relative;
+}
+.box{
+    height: 50%;
+    width:100%;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cal-image{
+    width:100%;
+    height:480px;
+}
+.c-overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color:cornflowerblue;
+    opacity: 0.5;
+    z-index: 5;
+}
+.con-box{
+    position: absolute;
+    width:80% ;
+    height: 200px;
+    transform: translate(148px,-114px);
+    /* border: 1px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    z-index: 12;
+    background-color: #fff;
+
+}
+.ele{
+     
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    /* height: 80%; */
+    margin:0 auto;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    
+}
+
+label, select, input {
+    margin-bottom: 5px;
+    display: inline-block;
+    width: 230px;
+    height: 29px;
+    font-size: 1.8rem;
+    border: none;
+}
+input,select{
+    border-bottom: 1px solid black;
+}
+
+.su{
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    width: 200px;
+}

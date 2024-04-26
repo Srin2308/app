@@ -10,61 +10,87 @@ body{
     width:100vw;
     height:100vh;
 }
-header nav{
-    background-color:#E0F1DB;
-    display:flex;
-    height:9rem;
-}
-header nav .logo{
+header nav {
+    background-color: #E0F1DB;
     display: flex;
-    width: 122px;
-    height: 9rem;
-    justify-content: flex-start;
+    height: 6rem;
+}
+
+header nav .logo {
+    display: flex;
+    width: 110px;
+    height: 6rem;
+    /* justify-content: flex-start; */
     align-items: center;
+    margin-left: 2em;
 }
-.logo img{
-    width:75%;
-    height:75%;
+
+.logo img {
+    width: 100%;
+    height: 100%;
 }
-header nav ul{
-    width:100%;
-    display:flex;
-    gap:1rem;
+
+.navc {
+    display: flex;
     justify-content: space-between;
-     align-items: center; 
 }
-.list{
-    flex:1;
-    border:1px solid black;
-    border-radius: 5px;
-    height:4rem;
-    line-height: 4rem;
-    list-style-type: none;
-    text-align: center;
-    background-color: black;
-}
- .list.e{
-    background-color: white;
+
+header nav ul {
+    display: flex;
+    gap: 4rem;
+    justify-content: end;
+    align-items: center;
+    margin-right: 5em;
 
 }
-.e a{
-    color:black;
+
+.list {
+    
+    list-style-type: none;
+    text-align: center;
+    position: relative;
 }
-.link{
+
+
+.link {
     text-decoration: none;
-    font-size: 3rem;
-    color:white;
+    font-size: 2.5rem;
+    color:forestgreen;
+    font-weight: bold;
+    
 }
-footer{
-    width:100%;
-    height:20rem;
-    bottom:0;
+.link::after{
+   
+      content: '';
+      position: absolute;
+      width:0; 
+      height: 3px;
+      display: block;
+      background:forestgreen;
+      transition: width .2s ease;
+    
 }
-footer .box{
-    width:100%;
-    height:20rem;
+.link:hover:after{
+    width: 50%;
+    left: 0;
+    height: 3px;
+}
+
+footer {
+    width: 100%;
+    height: 20rem;
+}
+
+footer .box {
+    width: 100%;
+    height: 20rem;
     background-color: black;
-} 
+}
+.active{
+    color:darkorange;
+    font-weight: bold;
+    
+}
 /* default content over */
 main{
     width:100vw;
